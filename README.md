@@ -6,7 +6,7 @@
 
 ## [~] Overview
 
-Caesar Cipher Decover with Frequency Analysis is a practical project for learning defensive security concepts and building a dcoumented, testable tool.
+Caesar Cipher Decoder with Frequency Analysis is a practical project for learning defensive security concepts and building a dcoumented, testable tool.
 
 **Goals:**
 - Build a working tool around a clearly defined security problem.
