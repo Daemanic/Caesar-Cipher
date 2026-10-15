@@ -91,8 +91,10 @@ Exact setup commands depends on the implementation. For a python project, a typi
 ```bash
 git clone https://github.com/daemanic/Caesar-Cipher
 
-# from installed directory run the following command:
-python3 Caesar-Cipher/src/cli.py --help
+# from the installed directory run this command:
+cd Caesar-Cipher/src/
+
+python3 cli.py --help
 ```
 
 Install the dependencies documented by the project, then run the CLI specifided by the implementation.
