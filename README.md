@@ -63,7 +63,7 @@ Caesar-Cipher/
 | Area | Tools |
 |---|---|
 | Language | Python 3.10+ |
-| Frameworks | Standard libraries: argparse, collections, string, pathlib, unittest |
+| Frameworks | argparse, collections, string, pathlib, unittest |
 | Version control | Git and Github |
 
 ---
