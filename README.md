@@ -40,9 +40,9 @@ Caesar-Cipher/
 │── tests/              → Tests ran during the experiment of the project
 │ │── example.py
 │
-│── pyproject.toml
 │── LICENSE             → Terms and Conditions
 │── README.md           → Project overview
+│── pyproject.toml
 ```
 
 ---
