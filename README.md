@@ -43,7 +43,6 @@ Caesar-Cipher/
 │
 │── LICENSE             → Terms and Conditions
 │── README.md           → Project overview
-│── pyproject.toml
 ```
 
 ---
