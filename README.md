@@ -31,14 +31,15 @@ Caesar Cipher Decoder with Frequency Analysis is a practical project for learnin
 Caesar-Cipher/
 │── docs/               → Architecture, supporting files and design decisions of the project
 │ │── algorithm.md
+│ │── frequency.md
 │
 │── src/                → Source code of the project
+│ │── __init_.py
 │ │── cli.py
 │ │── compile.py
 │ │── scoring.py
 │
 │── tests/              → Tests ran during the experiment of the project
-│ │── example.py
 │
 │── LICENSE             → Terms and Conditions
 │── README.md           → Project overview
