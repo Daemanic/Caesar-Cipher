@@ -39,8 +39,6 @@ Caesar-Cipher/
 │ │── compile.py
 │ │── scoring.py
 │
-│── tests/              → Tests ran during the experiment of the project
-│
 │── LICENSE             → Terms and Conditions
 │── README.md           → Project overview
 ```
