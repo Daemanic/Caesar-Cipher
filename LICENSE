@@ -1,0 +1,57 @@
+CAESAR CIPHER DECODER WITH FREQUENCY ANALYSIS - EUDCATIONAL NON-COMMERCIAL LICENSE
+
+Version 1.1 - October 2026
+
+Copyright © 2026 Aditya Shrestha (@daemanic). All rights reserved, except for the permissions expressly granted below.
+
+1. Purpose and Definitions
+This project is an educational project developed for learning, academic research, experimentation, and demonstration of cybersecurity concepts.
+This custom license permits educational and non-commercial use only. It is not an open-source license as defined by the Open Source Initiative.
+'Project' means the source code, tests, scripts, documentation, and other files in this repository.
+'Commercial use' means use primarily intended for commercial advantage or monetary compensation, including use in a paid product or service, within a for-profit business, in paid consulting or training, or charging a fee for the Project itself.
+Use in teaching, study, or research at an educational institution is not commercial use solely because its institution charges tuition.
+
+2. Permission to Use
+Permission is granted to download, access, study, and use this Project free of charge for educational, personal, academic, and other non-commercial purposes, subject to this license.
+
+3. Modification and Development
+Users may modify, adapt, improve extend, and combine the Project with other software for non-commercial purposes.
+
+4. Redistribution and Sharing
+Users may redistribute the original Project or modified versions free of charge provided that they:
+- Give appropriate credit to the project and its author.
+- Retain this license and applicable copyright notices.
+- Clearly identify significant modifications.
+- Do not impose additional restrictions that prevent recipients from exercising the permissions granted here.
+- Comply with Section 5.
+
+5. Prohibition of Commercial Use
+Commercial use is prohibited without prior written permission from the copyright holder. Prohibited activities include selling the source code, charging for copies or access to the Project, incorporating it into a paid product or service, and licensing it for commercial exploitation. Requests for commercial permission may be sent through the author's GitHub profile or another contact method published by the copyright holder.
+
+6. Attribution
+Any permitted redistribution, publication, or presentation of this Project or a modified version must acknowledge the project and its author. Where practical, include the project name and original repository URL. Attribution does not imply endorsement.
+
+7. Educational and Security Disclaimer
+This Project is provided for educational, academic research, and demonstration purposes only. Users are responsible for complying with applicable laws, regulations, institutional policies, and authorization requirements. Do not use it to access, monitor, or interfere with systems or networks without
+appropriate authorization.
+
+8. Academic Integrity
+This license does not permit anyone to submit the Project or a modified version as their own work for assessment. Users must follow their institution’s academic integrity rules and cite this Project when using or adapting it in assessed work.
+
+9. Third-Party Components
+Third-party software, libraries, datasets, and services remain under their own licenses and terms. This license does not change those terms. Any required notices must be retained.
+
+10. No Warranty
+The Project is provided “as is”, without warranties of any kind, express or implied, to the extent permitted by applicable law. The copyright holder does not guarantee that it is error-free, secure, or suitable for a particular purpose.
+
+11. Limitation of Liability
+To the extent permitted by applicable law, the copyright holder shall not be liable for claims, damages, losses, or other liabilities arising from use, inability to use, modification, or redistribution of the Project.
+
+12. Termination
+Permission terminates automatically if a user materially violates this license. Upon termination, the user must cease activities no longer authorized, subject to applicable law.
+
+13. Changes to this License
+The copyright holder may publish updated versions for future distribution. A revised version does not automatically change terms applicable to copies already distributed under an earlier version unless agreed or permitted by law.
+
+14. Acceptance
+By exercising permissions granted under this license, the user agrees to comply with its terms. If the user does not agree, permission to use, modify, or redistribute the Project’s copyrighted materials is not granted.
