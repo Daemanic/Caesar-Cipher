@@ -116,7 +116,7 @@ The attempt to recover the original plaintext without being given the encryption
 5. Sort candidates by score, from lowest to highest.
 6. Display the requested number of top-ranked candidates.
 
-> Note: the program does not automatically know what is the correct answer, so it uses [`frequency analysis`](./frequency.md) to estimate which candidates look most like english text.
+> Note: the program does not automatically know what is the correct answer, so it uses [frequency analysis](./frequency.md) to estimate which candidates look most like english text.
 
 ---
 
