@@ -34,7 +34,7 @@ An expected frequency is an estimate of how often a letter appears in typical en
 
 The exact frequencies vary according to the text. A novel, a technical document, a short message, and a piece of source code may have different distributions.
 
-| Letter | Approximate frequency |
+| Letter | Frequency (Aprox.) |
 |---|---:|
 | E | 12.70% |
 | T | 9.06% |
@@ -54,7 +54,7 @@ The projects `FREQ` dictionary stores the expected percentage for each english l
 
 ## [3] Counting occurrences
 
-Pythons `collections.Counter` counts how many times each item appears in the iterable.
+Pythons `collections.Counter` function counts how many times each item appears in the iterable.
 
 ```python
 from collections import Counter
