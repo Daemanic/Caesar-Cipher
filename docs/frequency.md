@@ -15,7 +15,7 @@ In this project, frequency analysis is used to rank possible plaintext candidate
 ## [1] Frequency importance
 
 ```text
-THE CAT IS IN THE GARDEN
+THE HELLO WORLD TEXT
 ```
 
 The letter `T` appear more than once, and so does `E`. Other letters appear less frequently.
