@@ -3,7 +3,6 @@
 ## [0] Introduction
 
 Frequency analysis is a technique used to study how often letters appear in a piece of text.
-
 In english, letters do not appear equally often. E.g: `E`, `T`, and `A` are generally more common than `Z`, `Q`, and `X`.
 
 A caesar cipher preserves the number of occurrences of each letter, but changes which letters those occurences belong to. This means letter frequency patterns cab help identify a likely decryption.
@@ -19,9 +18,7 @@ THE HELLO WORLD TEXT
 ```
 
 The letter `T` appear more than once, and so does `E`. Other letters appear less frequently.
-
 If the sentence is encrypted using a caesar cipher, every occurence of a particular letter is shifted to the same new letter.
-
 The original frequencies are not lost, Instead, thye are associated with different letters.
 
 By comparing a decrypted candidate with typical english letter frequencies, the program can estimate whether that candidate is plausible english text.
@@ -75,7 +72,6 @@ output:
 ```
 
 This is useful because the scoring algorithm needs to observe count of each letter in a candidate.
-
 Before counting, the project filters out characters that are not english letters and converts uppercase letters to lowercase.
 
 **Conceptually:**
@@ -103,8 +99,8 @@ The score function compares two quantities:
 The expected count calculation:
 
 \[
-    E_i = /frac{N /times p_i}{100}
-]
+E_i = /frac{N /times p_i}{100}
+\]
 
 - \(E_i\): the expected count for letter \(i\).
 - \(p_i\): expected frequency percentage for that letter.
@@ -117,9 +113,32 @@ Expected E count = 100 x 12.70 / 100
 ```
 
 So, if the candidate contains `13` instances of `E`, its observed count is close to the expected count.
-
 If it contains no instances of `E`, the observed count differs more substantially from the expected count.
-
 One letter alone is not enough to judge a candidate, so the program compares all `26` letters.
+
+---
+
+## [5] Frequency Mechanism
+
+The project uses a `chi-square-style` score to measure the difference between observed and expected letter counts.
+
+Contribution per letter:
+
+\[
+\frac{(0_i - E_i)^2{E_i}}
+\]
+
+Sum of contribution:
+
+\[
+\chi^2 = \sum_{i=1}^{26}
+\frac{(0_i - E_i)^2}{E_i}
+\]
+
+- \(0_i\): the observed count of letter.
+- \(E_i\): its expected count.
+- The sum covers all `26` english letters.
+
+The score measures how far the observed distribution differs from the expected distrbution.
 
 ---
