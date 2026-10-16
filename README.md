@@ -1,4 +1,4 @@
-# Caesar Cipher Decoder with Frequency Analysis
+# Caesar Cipher Decoder
 
 > Educational only cybersecurity project.
 
