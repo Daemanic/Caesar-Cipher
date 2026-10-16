@@ -72,3 +72,74 @@ For example, if `X = 23` is shifted by `5` then it goes off the `26` letter alph
 > Note: the spaces, comma, and exclamation mark remain unchanged.
 
 ---
+
+## [3] Decryption
+
+It basically reverses the encryption shift (opposite of above).
+
+Used Formulation:
+
+\[
+    D(x) = (x - k) \bmod 26
+]
+
+- `k`: original encryption key.
+- `x`: the cipher letters position.
+- `D(x)`: decrypted letters position.
+
+### [~] -ve Shift Reason
+
+The project reuses the same core function for encryption and decryption. Instead of creating a separate letter-shifting algorithm, the decryption function passes the negative of the key to the core function.
+
+```python
+def encrypt(text, shift):
+    return caesar_cipher(text, shift)
+
+def decrypt(text, shift):
+    return caesar_cipher(text, -shift)
+```
+
+> Note: this makes the code simpler by repetitive logic.
+
+---
+
+## [4] Cracking Cipher
+
+The attempt to recover the original plaintext without being given the encryption key. A caesar cipher has only `26` distinct shifts, so the program can test every possible key.
+
+### [~] Process Implemented
+
+1. Receive the ciphertext.
+2. Generate a candidate by trying a possible decryption shift.
+3. Repeat for shifts `0` through `25`.
+4. Calculate a frequency score for each candidate.
+5. Sort candidates by score, from lowest to highest.
+6. Display the requested number of top-ranked candidates.
+
+> Note: the program does not automatically know what is the correct answer, so it uses [`frequency analysis`](./frequency.md) to estimate which candidates look most like english text.
+
+---
+
+## [5] Workflow
+
+```text
+    user runs a command
+            |
+            v
+    parse command-line args
+            |
+            v
+    validate requested operation
+            |
+            v
+    read text provided (arg, file, or input)
+            |
+            v
+    choose the operation (encrypt, decrypt, or crack)
+            |
+            v
+    according to the operation, perform task
+            |
+            v
+    output result or store in file
+```
