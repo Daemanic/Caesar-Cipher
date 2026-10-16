@@ -1,6 +1,6 @@
 # Caesar Cipher Algorithm
 
-## Overview
+## 0. Overview
 
 A caesar cipher is a simple substitution copher that encrypts text by shifting each english letter by a fixed number of positions in the alphabet.
 
