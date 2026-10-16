@@ -1,6 +1,6 @@
 # Caesar Cipher Algorithm
 
-## 0. Overview
+## [0] Introduction
 
 A caesar cipher is a simple substitution copher that encrypts text by shifting each english letter by a fixed number of positions in the alphabet.
 
@@ -18,7 +18,7 @@ The core cipher implementation is in: [`src/compile.py`](../src/compile.py), whi
 
 ---
 
-## 1. Alphabet Representation
+## [1] Alphabet Representation
 
 The english alphabet contains 26 letters. To perform calculatons, each letter is represented by a number from `0` to `25`.
 
