@@ -51,3 +51,75 @@ The exact frequencies vary according to the text. A novel, a technical document,
 The projects `FREQ` dictionary stores the expected percentage for each english letter. The scoring function uses these values to compare a candidate against the references distribution.
 
 ---
+
+## [3] Counting occurrences
+
+Pythons `collections.Counter` counts how many times each item appears in the iterable.
+
+```python
+from collections import Counter
+
+text = 'banana'
+counts = Counter(text)
+
+print(counts)
+```
+
+```python
+output:
+{
+    'b': 1,
+    'a': 3,
+    'n': 2
+}
+```
+
+This is useful because the scoring algorithm needs to observe count of each letter in a candidate.
+
+Before counting, the project filters out characters that are not english letters and converts uppercase letters to lowercase.
+
+**Conceptually:**
+```python
+text = 'hello, world!'
+
+letters = [
+    char.lower()
+    for char in text
+    if 'a' <= char.lower() <= 'z'
+]
+```
+
+The resulting list contains only the english letters, in lowercase. Extra stuffs; spaces, digits, and punctuations do not contribute to the frequency score.
+
+---
+
+## [4] Observing Expected Counts
+
+The score function compares two quantities:
+
+- Observed count: how many times a letter actually appears in the candidate.
+- Expected count: how many times that letter would be expected to appear according to the reference frequencies.
+
+The expected count calculation:
+
+\[
+    E_i = /frac{N /times p_i}{100}
+]
+
+- \(E_i\): the expected count for letter \(i\).
+- \(p_i\): expected frequency percentage for that letter.
+- \(N\): the total number of english letters in the candidate.
+
+If the expected frequency of `E` is `12.70%` in a candidate containing `100` english letters:
+```text
+Expected E count = 100 x 12.70 / 100
+                 = 12.7
+```
+
+So, if the candidate contains `13` instances of `E`, its observed count is close to the expected count.
+
+If it contains no instances of `E`, the observed count differs more substantially from the expected count.
+
+One letter alone is not enough to judge a candidate, so the program compares all `26` letters.
+
+---
