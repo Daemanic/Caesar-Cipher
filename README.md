@@ -62,7 +62,6 @@ Caesar-Cipher/
 |---|---|
 | Language | Python 3.10+ |
 | Frameworks | argparse, collections, pathlib, sys |
-| Version control | Git and Github |
 
 ---
 
