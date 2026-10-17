@@ -1,17 +1,17 @@
 # Caesar Cipher Decoder
 
-> Educational only cybersecurity project.
+> Cryptography Foundation.
 
 ---
 
 ## [~] Overview
 
-Caesar Cipher Decoder with Frequency Analysis is a practical project for learning defensive security concepts and building a dcoumented, testable tool.
+Caesar Cipher Decoder (with frequency analysis) is a practical project for learning defensive security concepts and building a documented, testable tool.
 
 **Goals:**
 - Build a working tool around a clearly defined security problem.
 - Keep behavior transparent, testable and safe by default.
-- Document design choices, evidence, limitations, and future improvements (if any).
+- Document design choices, evidence, and future improvements (if any).
 
 ---
 
