@@ -7,7 +7,7 @@ In english, letters do not appear equally often. E.g: `E`, `T`, and `A` are gene
 
 A caesar cipher preserves the number of occurrences of each letter, but changes which letters those occurences belong to. This means letter frequency patterns cab help identify a likely decryption.
 
-In this project, frequency analysis is used to rank possible plaintext candidates when cracking a caesar cipher using [src/scoring.py](../src/scoring.py).
+In this project, frequency analysis is used to rank possible plaintext candidates when cracking a caesar cipher using [`src/scoring.py`](../src/scoring.py).
 
 ---
 
