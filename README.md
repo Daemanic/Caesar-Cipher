@@ -61,7 +61,7 @@ Caesar-Cipher/
 | Area | Tools |
 |---|---|
 | Language | Python 3.10+ |
-| Frameworks | argparse, collections, counter, pathlib, unittest |
+| Frameworks | argparse, collections, pathlib, sys |
 | Version control | Git and Github |
 
 ---
