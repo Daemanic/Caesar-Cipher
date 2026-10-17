@@ -214,7 +214,7 @@ This prevents text with no english letters from receiving an artificially good s
 2. Keep english letters and convert them to lowercase.
 3. Count the occurences of each letter using `Counter()`.
 4. Calculate expected counts from the reference frequencies.
-5. Compare observed and expected counts using a chi-squared formula.
+5. Compare observed and expected counts using a `chi-squared` formula.
 6. Return the total score.
 7. Use the score to rank candidate decryptions.
 
