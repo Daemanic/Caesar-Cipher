@@ -141,4 +141,51 @@ Sum of contribution:
 
 The score measures how far the observed distribution differs from the expected distrbution.
 
+**Interpretation:**
+For this implementation, a lower score generally indicates that the candidates letter counts are closer to the reference frequencies.
+Whereas, a higher score indicates a greater difference.
+
+The score is a ranking heuristic, not a percentage probability that the candidate is correct.
+
+**Simplified Example:**
+```python
+observed = 13
+expected = 12.7
+
+difference = observed - expected
+contribution = difference ** 2 / expected
+print(contribution)
+```
+The result is a small contribution because the observed and expected counts are close.
+The complete scoring function repeats this calculation for every letter and adds the contributions together.
+
+---
+
+## [6] Candidates Ranking
+
+The cracking workflow generates one candidate for every possible decryption shift and calcualtes its frequency score.
+
+**Conceptually:**
+```python
+candidates = []
+
+for shift in range(26):
+    candidate = decrypt(ciphertext, shift)
+    score = frequency_score(candidate)
+
+    candidates.append((score, shift, candidate))
+
+candidates.sort(key=lambda item: item[0])
+```
+
+1. Its frequency score.
+2. The decryption shift used.
+3. The resulting candidate text.
+
+The candidates are sorted by score in ascending order, placing the lowest-scoring candidates first
+
+According to the users request, the program then displays the top candidates. For example: if five candidates was requested, the program displays the first five entries after sorting.
+
+This process is called ranking, not guaranteed decryption. The program estimates which result is most plausible rather than proving which result is the original message.
+
 ---
