@@ -189,3 +189,21 @@ According to the users request, the program then displays the top candidates. Fo
 This process is called ranking, not guaranteed decryption. The program estimates which result is most plausible rather than proving which result is the original message.
 
 ---
+
+## [7] Possible Scenario
+
+**What if there are no letters?**
+Punctuation-only text, digits, or any empty string do not privde useful letter-frequency information.
+So, the projects scoring function returns positive infinity in this such situation:
+
+```python
+if not letters:
+    return float("inf")
+```
+
+Positive infinity is used as a very poor score. When candidates are sorted in ascending order, a candidate with this score will normally appear after candidates with finite scores.
+
+This prevents text with no english letters from receiving an artificially good score.
+
+---
+
