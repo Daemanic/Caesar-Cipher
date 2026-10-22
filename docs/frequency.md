@@ -9,6 +9,8 @@ A caesar cipher preserves the number of occurrences of each letter, but changes 
 
 In this project, frequency analysis is used to rank possible plaintext candidates when cracking a caesar cipher using [`src/scoring.py`](../src/scoring.py).
 
+![alt text](image.png)
+
 ---
 
 ## [1] Frequency importance
